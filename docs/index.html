@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <title> hemsida</title>
+    <link
+      rel="icon"
+      href="images/PHOTO-2023-10-02-18-00-12-removebg-preview.png"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+
+        <ul class="nav-menu" style="background-color: white">
+          <li class="nav-item">
+            <a href="#hemsida" class="nav-link"> Hemsida</a>
+          </li>
+          <li class="nav-item">
+            <a href="#boka" class="nav-link">Boka bord</a>
+          </li>
+          <li class="nav-item">
+            <a href="#meny" class="nav-link">Meny</a>
+          </li>
+          <li class="nav-item">
+            <a href="#adress" class="nav-link">Adress</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="logo" style="margin: auto; margin-top: 0;">
+        <a href="#hemsida">
+          <img
+            id="logo"
+            src="images/homayooni.png"
+            alt="Logo"
+        /></a>
+      </div>
+    </header>
+    <div class="containerColumn">
+        <div
+          class="fixed-column1"
+          
+        >
+          <img class="imageColumn" src="images/left.png" alt="Image" />
+        </div>
+        <div
+          class="fixed-column2"
+        >
+          <img class="imageColumn" src="images/right.png" alt="Image" />
+
+        </div>
+    </div>
+
+<section id="hemsida" >    
+    <img
+        src="images/Untitled.png"
+        class="image1"
+        alt="Lamb"
+
+    />    <h1 class="title">Upptäck det persiska köket<br /> Med Homayooni </h1>
+ <p class="text1"> Den genuina smaken av perisksa rätter har alltid representerat vår gamla kultur. Hos oss kan du prova den unika smaken och doften av persisk mat. </br > Tack för att ni valt oss! här kan ni boka bord och se menyn.
+    </p>           
+
+
+    <img
+        class="image2"
+        alt="chicken and rise"
+        src="images/IMG_7442_2-removebg-preview-removebg-preview.png"
+        align="right"
+    />
+
+
+</section>
+<section id="meny" style="height: 100vh;">
+
+      <div class="menu">
+    
+        <ul class="mealline" style="margin-top: 110px;">
+          <li class="mealline-item" style="text-align:center">
+            <h1> Förrätter</h1>
+            <ul class="foodItem">
+              <div class="menu-category">
+                <ul id="menuForratt" class="menu-list"></ul>
+            </div>
+              
+            </ul>
+          </li>
+  
+          <li class="mealline-item" style="text-align:center">
+            <h1> Huvudrätter</h1>
+            <ul class="foodItem">
+              <div class="menu-category">
+                  <ul id="menuHuvudratt" class="menu-list"></ul>
+              </div>
+              
+            </ul>
+          </li>
+          <li class="mealline-item" style="text-align:center">
+            <h1> Efterätter</h1>
+            <ul class="foodItem">
+              <div class="menu-category">
+                <ul id="menuEfterratt" class="menu-list"></ul>
+            </div>
+              
+            </ul>
+          </li>
+            <li class="mealline-item" style="text-align:center">
+              <h1> Vin & Öl</h1>
+              <ul class="foodItem">
+                <div class="menu-category">
+                  <ul id="menuVin" class="menu-list"></ul>
+              </div>
+                
+              </ul>
+            </li>
+            <li class="mealline-item" style="text-align:center">
+              <h1> Alkoholfritt</h1>
+              <ul class="foodItem">
+                <div class="menu-category">
+                  <ul id="menuAlkoholfritt" class="menu-list"></ul>
+              </div>
+                
+              </ul>
+            </li>
+          <li class="mealline-item" style="text-align:center">
+            <img
+            class="image2"
+            alt="chicken and rise"
+            src="images/cake.png"
+            align="right"
+        />
+        </ul>
+      </div></section>
+<section id="boka" style="height: 100vh;">     
+      <form id="bookingForm">
+          <label for="name">Namn</label>
+          <input type="text" id="name" name="name" required><br>
+      
+          <label for="numberOfGuests">Antal gäster</label>
+          <input type="number" id="numberOfGuests" name="numberOfGuests" required><br>
+      
+          <label for="phone">Telefon</label>
+          <span id="phoneError" class="error-message"></span><br>
+          <input type="text" id="phone" name="phone" required><br>
+
+      
+          <label for="date">Datum</label>
+          <span id="dateError" class="error-message"></span><br>
+          <input type="date" id="date" name="date" required><br>
+
+      
+          <label for="time">Tid</label>
+          <span id="timeError" class="error-message"></span><br>
+          <input type="time" id="time" name="time" required><br>
+
+      
+          <button type="submit">Boka bord</button>
+      </form>
+      <img
+      class="image2"
+      alt="chicken and rise"
+      src="images/gryta.png"
+      align="right"
+  />
+</section>
+<section id="adress" style="height: 100vh;">     
+  <h1 class="adressTitel">Adress</h1> 
+<div class="map-container">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1104.7150909660943!2d50.991017785175785!3d35.82950628443667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dbf2180e69c95%3A0xe0a27f541646b3ef!2zSG9tYXlvb25pIFJlc3RhdXJhbnQtINmF2LfYqNiuINmH2YXYp9uM2YjZhtuM!5e0!3m2!1sen!2s!4v1697291276499!5m2!1sen!2s"
+      id="map"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    </div>
+
+    <div class="adress">Karaj Baharestan Blv </br>Homayooni Restaurang </div>
+    <div class="adress"><a href="tel:02634444343" > Telefonnummer:  <u> +982634444343</u></a><div> 
+        <img
+        class="image2"
+        alt="chicken and rise"
+        src="images/kottbulle.png"
+        align="right"
+    />
+</section>
+<script src="script.js"></script>
+</html>

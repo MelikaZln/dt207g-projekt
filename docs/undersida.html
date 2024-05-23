@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undersida</title>
+</head>
+<body style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+    <h1>Välkommen till din sida!</h1>
+    <p id="welcomeMessage"></p>
+    <h3>Alla bokningar:</h3>
+    <ul id="bookingList"></ul>
+
+    <div class="menu-section">
+        <div class="menu-category">
+            <h3>Alkoholfritt</h3>
+            <ul id="menuAlkoholfritt" class="menu-list"></ul>
+        </div>
+        <div class="menu-category">
+            <h3>Efterrätt</h3>
+            <ul id="menuEfterratt" class="menu-list"></ul>
+        </div>
+        <div class="menu-category">
+            <h3>Förrätt</h3>
+            <ul id="menuForratt" class="menu-list"></ul>
+        </div>
+        <div class="menu-category">
+            <h3>Huvudrätt</h3>
+            <ul id="menuHuvudratt" class="menu-list"></ul>
+        </div>
+        <div class="menu-category">
+            <h3>Vin & Öl</h3>
+            <ul id="menuVin" class="menu-list"></ul>
+        </div>
+    </div>
+
+    <h3>Lägg till nytt menyalternativ:</h3>
+    <form id="menuForm">
+        <label for="menuName">Namn:</label>
+        <input type="text" id="menuName" name="name" required><br>
+        <label for="menuPrice">Pris:</label>
+        <input type="number" id="menuPrice" name="price" required><br>
+        <label for="menuIngredients">Ingredienser:</label>
+        <input type="text" id="menuIngredients" name="ingredients" ><br>
+        <label for="menuCategory">Kategori:</label>
+        <select id="menuCategory" name="category" required>
+            <option value="alkoholfritt">Alkoholfritt</option>
+            <option value="efterratt">Efterrätt</option>
+            <option value="forratt">Förrätt</option>
+            <option value="huvudratt">Huvudrätt</option>
+            <option value="vin">Vin & Öl</option>
+        </select><br>
+        <button type="button" onclick="addMenuItem()">Lägg till</button>
+    </form>
+
+    <button onclick="logoutUser()">Logga ut</button>
+
+    <script src="scriptundersida.js"></script>
+</body>
+</html>

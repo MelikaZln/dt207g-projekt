@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Registrera och logga in</title> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registrera</h1>
+        <form id="registerForm"> <!-- Formulär för registrering med ett unikt ID -->
+            <label class="uppgift" for="registerUsername">Användarnamn: </label>
+            <input type="text" id="registerUsername" name="username" required> <br> <br> 
+            <label class="uppgift" for="registerPassword">Lösenord: </label>
+            <input type="password" id="registerPassword" name="password" required> <br> <br> 
+            <label class="uppgift" for="registerEmail">E-post: </label>
+            <input type="email" id="registerEmail" name="email" required> <br> <br>  
+            <button type="button" onclick="registerUser()">Registrera </button> <!-- Knapp för att registrera användaren -->
+        </form>
+        <h1>Logga in</h1>
+        <form id="loginForm"> <!-- Formulär för inloggning med ett unikt ID -->
+            <label class="uppgift" for="loginUsername">Användarnamn: </label>
+            <input type="text" id="loginUsername" name="username" required> <br> <br>  
+            <label class="uppgift" for="loginPassword">Lösenord: </label>
+            <input type="password" id="loginPassword" name="password" required> <br> <br>  
+            <button type="button" onclick="loginUser()">Logga in</button> 
+        </form>
+    </div>
+    
+    <script src="main.js"></script> 
+
+</body>
+</html>
